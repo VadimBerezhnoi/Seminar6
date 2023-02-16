@@ -19,10 +19,8 @@ void GetSqrArray(int[,] array2D)
 {
     for (int i = 0; i < array2D.GetLength(0); i += 2)
     {
-        // if (i %2 != 0) continue; 
-        for (int j = 0; j < array2D.GetLength(1); j += 2)
+         for (int j = 0; j < array2D.GetLength(1); j += 2)
         {
-            // if (j %2 == 0) 
             array2D[i, j] *= array2D[i, j];
         }
     }
